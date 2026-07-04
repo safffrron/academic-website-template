@@ -25,6 +25,10 @@
 
 html { scroll-behavior: smooth; }
 
+@media (min-width: 900px) {
+  html.pages-host { zoom: 0.8; }
+}
+
 body {
   margin: 0;
   background: var(--paper);
