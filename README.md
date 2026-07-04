@@ -40,8 +40,8 @@ block at the top of `styles.css`.
 
 ## Notes
 
-- Fonts (Cormorant Garamond, Instrument Sans, Caveat, Spline Sans Mono) load
-  from Google Fonts; system fallbacks apply offline.
+- Fonts (Cormorant Garamond, Instrument Sans, Spline Sans Mono) load from
+  Google Fonts; system fallbacks apply offline.
 - The hand-drawn look (circled course code, heading underlines, icons, the
   pruned-network sketch) comes from inline SVGs run through the two `pencil`
   filters defined at the top of `index.html`.
