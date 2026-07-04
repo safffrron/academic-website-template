@@ -11,7 +11,7 @@ plain HTML, CSS, and vanilla JavaScript.
 ```
 index.html   — all content lives here; sections are marked with EDIT comments
 styles.css   — design tokens at the top (:root), then one block per section
-script.js    — header hairline, scroll-spy nav, sparse-matrix ornament
+script.js    — header hairline and scroll-spy nav; nothing else
 assets/      — IIT Bombay seal + wordmark (SVG)
 ```
 
@@ -40,7 +40,10 @@ block at the top of `styles.css`.
 
 ## Notes
 
-- Fonts (Marcellus, Hanken Grotesk, Spline Sans Mono) load from Google Fonts;
-  system fallbacks apply offline.
+- Fonts (Cormorant Garamond, Instrument Sans, Caveat, Spline Sans Mono) load
+  from Google Fonts; system fallbacks apply offline.
+- The hand-drawn look (circled course code, heading underlines, icons, the
+  pruned-network sketch) comes from inline SVGs run through the two `pencil`
+  filters defined at the top of `index.html`.
 - The IIT Bombay seal and wordmark are trademarks of the institute, included
   here for official course pages.
