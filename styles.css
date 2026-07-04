@@ -24,7 +24,7 @@
 * { box-sizing: border-box; }
 
 html {
-  font-size: 80%;
+  zoom: 0.8;
   scroll-behavior: smooth;
 }
 
@@ -46,7 +46,6 @@ body::after {
   opacity: 0.30;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 17.5rem 17.5rem;
 }
 
 .wrap {
@@ -128,8 +127,8 @@ a:hover { text-decoration-color: var(--accent-deep); }
 }
 
 .brand img {
-  width: 2.125rem;
-  height: 2.125rem;
+  width: 34px;
+  height: 34px;
   align-self: center;
 }
 
@@ -243,7 +242,7 @@ a:hover { text-decoration-color: var(--accent-deep); }
 .hero-sketch {
   margin: 0;
   flex-shrink: 0;
-  width: 10.9375rem;
+  width: 175px;
   text-align: center;
 }
 
@@ -285,8 +284,8 @@ a:hover { text-decoration-color: var(--accent-deep); }
 /* hand-drawn underline beneath each heading */
 .scrawl {
   display: block;
-  width: 6.75rem;
-  height: 0.5rem;
+  width: 108px;
+  height: 8px;
   margin-top: 0.25rem;
 }
 
@@ -349,8 +348,8 @@ a:hover { text-decoration-color: var(--accent-deep); }
 
 .avatar {
   position: relative;
-  width: 3.375rem;
-  height: 3.375rem;
+  width: 54px;
+  height: 54px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -423,8 +422,8 @@ a:hover { text-decoration-color: var(--accent-deep); }
 }
 
 .pic {
-  width: 1.0625rem;
-  height: 1.0625rem;
+  width: 17px;
+  height: 17px;
   flex-shrink: 0;
   margin-top: 0.1rem;
 }
@@ -613,7 +612,7 @@ a:hover { text-decoration-color: var(--accent-deep); }
   .brand-meta { display: none; }
 
   .hero { flex-direction: column; align-items: flex-start; gap: 1.6rem; padding-top: 2.2rem; }
-  .hero-sketch { width: 9.375rem; align-self: center; }
+  .hero-sketch { width: 150px; align-self: center; }
 
   .lrow { grid-template-columns: 1fr; gap: 0.3rem; padding: 0.6rem 0; }
 
