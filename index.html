@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficient AI · IIT Bombay</title>
+  <meta name="description" content="Efficient AI — a graduate course on algorithmic and hardware-aware approaches to efficient AI training and inference. Department of Computer Science and Engineering, IIT Bombay.">
+  <link rel="icon" type="image/svg+xml" href="assets/iitb-seal.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="Efficient AI — back to top">
+      <img src="assets/iitb-seal.svg" alt="IIT Bombay" width="36" height="36">
+      <span class="brand-text">
+        <span class="brand-name">Efficient AI</span>
+        <span class="brand-sub">IIT Bombay · Autumn 2026</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#updates">Updates</a>
+      <a href="#staff">Staff</a>
+      <a href="#logistics">Logistics</a>
+      <a href="#contents">Contents</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#references">References</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================================================================
+       HERO — course identity. EDIT: course code, semester, meta line.
+       ================================================================ -->
+  <section class="hero" id="top">
+    <div class="ornament" id="sparse-ornament" aria-hidden="true"></div>
+    <p class="hero-eyebrow">CS 7XX · Autumn 2026 · Indian Institute of Technology Bombay</p>
+    <h1 class="hero-title">Efficient AI</h1>
+    <p class="hero-lede">Algorithmic and hardware-aware approaches to making modern AI cheaper to
+      train and faster to serve — from pruning and quantization to speculative decoding
+      and KV-cache compression.</p>
+    <p class="hero-meta">
+      <span>Lectures — slot TBA</span>
+      <span class="meta-dot" aria-hidden="true">·</span>
+      <span>Venue — TBA</span>
+      <span class="meta-dot" aria-hidden="true">·</span>
+      <span>6 credits</span>
+    </p>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       UPDATES — newest first. EDIT: add a new <li> at the top.
+       ================================================================ -->
+  <section class="section" id="updates">
+    <header class="section-head">
+      <h2>Updates</h2>
+      <p class="section-sub">Announcements appear here first — check back before every lecture.</p>
+    </header>
+    <ul class="updates">
+      <li>
+        <span class="update-date">Jul 05 2026</span>
+        <p>The course website is live. Logistics, the lecture slot, and the venue will be
+           announced here before the semester begins.</p>
+      </li>
+      <li>
+        <span class="update-date">Jul 05 2026</span>
+        <p>Registration opens with the institute pre-registration window. Seats for
+           non-CSE students are by consent of the instructor.</p>
+      </li>
+    </ul>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       COURSE STAFF — EDIT: names, emails, offices.
+       Duplicate an <article class="person"> to add more TAs.
+       ================================================================ -->
+  <section class="section" id="staff">
+    <header class="section-head">
+      <h2>Course Staff</h2>
+      <p class="section-sub">Office hours are by appointment until slots are announced.</p>
+    </header>
+    <div class="staff-grid">
+      <article class="person">
+        <div class="monogram" aria-hidden="true">In</div>
+        <h3>Prof. Instructor Name</h3>
+        <p class="person-role">Instructor</p>
+        <p class="person-lines">
+          <a href="mailto:instructor@cse.iitb.ac.in">instructor@cse.iitb.ac.in</a><br>
+          Office · CSE Building, Room 000
+        </p>
+      </article>
+      <article class="person">
+        <div class="monogram" aria-hidden="true">Ta</div>
+        <h3>TA Name</h3>
+        <p class="person-role">Teaching Assistant</p>
+        <p class="person-lines">
+          <a href="mailto:ta@cse.iitb.ac.in">ta@cse.iitb.ac.in</a><br>
+          Office hours · TBA
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       LOGISTICS — EDIT: values on the right of each row.
+       ================================================================ -->
+  <section class="section" id="logistics">
+    <header class="section-head">
+      <h2>Logistics</h2>
+      <p class="section-sub">Everything administrative in one place.</p>
+    </header>
+    <dl class="logistics">
+      <div class="row">
+        <dt>Lectures</dt>
+        <dd>Slot TBA — two sessions per week.</dd>
+      </div>
+      <div class="row">
+        <dt>Venue</dt>
+        <dd>TBA</dd>
+      </div>
+      <div class="row">
+        <dt>Credits</dt>
+        <dd>6</dd>
+      </div>
+      <div class="row">
+        <dt>Prerequisites</dt>
+        <dd>A first course in machine learning. Familiarity with computer architecture
+            helps but is not required. Others by consent of the instructor.</dd>
+      </div>
+      <div class="row">
+        <dt>Grading</dt>
+        <dd>
+          <ul class="grading-list">
+            <li><span>Course project</span><span class="leader"></span><em>40%</em></li>
+            <li><span>Paper presentations</span><span class="leader"></span><em>25%</em></li>
+            <li><span>Assignments</span><span class="leader"></span><em>20%</em></li>
+            <li><span>Reviews &amp; participation</span><span class="leader"></span><em>15%</em></li>
+          </ul>
+          <small>Indicative — final weights are announced in the first lecture.</small>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>Communication</dt>
+        <dd>Announcements on this page and Moodle. The discussion-forum link will be
+            shared in the first lecture.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       CONTENTS — five arcs covering the full topic list.
+       ================================================================ -->
+  <section class="section" id="contents">
+    <header class="section-head">
+      <h2>Contents</h2>
+      <p class="section-sub">Five arcs, ordered roughly as the semester runs.</p>
+    </header>
+    <div class="modules">
+      <article class="module">
+        <p class="module-no">Module I</p>
+        <h3>Compression &amp; Quantization</h3>
+        <p class="module-topics">Model compression <span class="sep">·</span> Knowledge distillation
+          <span class="sep">·</span> Quantization <span class="sep">·</span> Hardware support for quantization</p>
+      </article>
+      <article class="module">
+        <p class="module-no">Module II</p>
+        <h3>Sparsity &amp; Pruning</h3>
+        <p class="module-topics">Pruning <span class="sep">·</span> The lottery ticket hypothesis
+          <span class="sep">·</span> Hardware support for sparsity <span class="sep">·</span> Sparse training</p>
+      </article>
+      <article class="module">
+        <p class="module-no">Module III</p>
+        <h3>Architectures &amp; Adaptation</h3>
+        <p class="module-topics">Neural architecture search <span class="sep">·</span> Low-rank structure:
+          butterfly &amp; monarch matrices <span class="sep">·</span> PEFT — LoRA and variants, SketchTune
+          <span class="sep">·</span> Elastic parameter memory <span class="sep">·</span> Hardware-aware hashing</p>
+      </article>
+      <article class="module">
+        <p class="module-no">Module IV</p>
+        <h3>Efficient Attention &amp; Inference</h3>
+        <p class="module-topics">Sparse attention — prefill &amp; decode, training-time
+          <span class="sep">·</span> Speculative decoding <span class="sep">·</span> KV-cache compression
+          <span class="sep">·</span> Semantic prompt caching <span class="sep">·</span> Attention alternatives:
+          SSMs &amp; linear attention</p>
+      </article>
+      <article class="module">
+        <p class="module-no">Module V</p>
+        <h3>Systems &amp; Hardware</h3>
+        <p class="module-topics">IR techniques in LLM inference — SLIDE and successors
+          <span class="sep">·</span> Upcoming GPU IR languages <span class="sep">·</span> Context extension
+          &amp; compaction</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       SCHEDULE — EDIT: one <tr> per week. Dates are tentative.
+       Resources link either to #references anchors or external pages.
+       ================================================================ -->
+  <section class="section" id="schedule">
+    <header class="section-head">
+      <h2>Schedule</h2>
+      <p class="section-sub">Dates are tentative until the academic calendar is finalised.
+        Slides and readings land in the resources column after each week.</p>
+    </header>
+    <div class="table-wrap">
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td><td>Jul 28</td>
+            <td><strong>Why efficient AI</strong> — the cost of training and serving; roofline
+                model, memory hierarchy; course logistics.</td>
+            <td><a href="https://hanlab.mit.edu/courses/2024-fall-65940">MIT 6.5940</a></td>
+          </tr>
+          <tr>
+            <td>02</td><td>Aug 04</td>
+            <td><strong>Model compression &amp; knowledge distillation</strong> — the compression
+                landscape; teacher–student training.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>03</td><td>Aug 11</td>
+            <td><strong>Pruning &amp; sparsity</strong> — magnitude and structured pruning; the
+                lottery ticket hypothesis.</td>
+            <td><a href="#ref-frankle">Frankle ’23</a></td>
+          </tr>
+          <tr>
+            <td>04</td><td>Aug 18</td>
+            <td><strong>Hardware support for sparsity</strong> — sparse formats, structured
+                sparsity on accelerators.</td>
+            <td><a href="https://sky-light.eecs.berkeley.edu">Sky-Light</a></td>
+          </tr>
+          <tr>
+            <td>05</td><td>Aug 25</td>
+            <td><strong>Quantization I</strong> — post-training quantization and
+                quantization-aware training.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>06</td><td>Sep 01</td>
+            <td><strong>Quantization II</strong> — hardware support; low-precision formats
+                (INT4, FP8) and kernels.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>07</td><td>Sep 08</td>
+            <td><strong>Elastic parameter memory &amp; hardware-aware hashing</strong> —
+                parameter sharing at extreme scale.</td>
+            <td><a href="#ref-desai">Desai ’24</a>, <a href="#ref-chen">Chen ’20</a></td>
+          </tr>
+          <tr class="milestone">
+            <td colspan="4">Sep 14 – 20 · Mid-semester examinations — no lecture</td>
+          </tr>
+          <tr>
+            <td>08</td><td>Sep 22</td>
+            <td><strong>Neural architecture search</strong> — search spaces, hardware-aware
+                objectives, once-for-all networks.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>09</td><td>Sep 29</td>
+            <td><strong>Low-rank structure</strong> — butterfly and monarch matrices;
+                structured matrices as compute savers.</td>
+            <td><a href="#ref-quang">Quang ’23</a></td>
+          </tr>
+          <tr>
+            <td>10</td><td>Oct 06</td>
+            <td><strong>Parameter-efficient fine-tuning</strong> — LoRA and its variants,
+                SketchTune.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>11</td><td>Oct 13</td>
+            <td><strong>Sparse attention</strong> — inference-time and training-time sparsity;
+                prefill versus decode.</td>
+            <td class="none">—</td>
+          </tr>
+          <tr>
+            <td>12</td><td>Oct 20</td>
+            <td><strong>Speculative decoding</strong> — draft models, verification, acceptance
+                schemes.</td>
+            <td><a href="#ref-spec">Paper list</a></td>
+          </tr>
+          <tr>
+            <td>13</td><td>Oct 27</td>
+            <td><strong>KV-cache compression &amp; semantic prompt caching</strong> — eviction,
+                quantized caches, cache reuse across requests.</td>
+            <td><a href="#ref-kvpress">kvpress</a></td>
+          </tr>
+          <tr>
+            <td>14</td><td>Nov 03</td>
+            <td><strong>Attention alternatives &amp; systems</strong> — SSMs and linear attention;
+                IR techniques (SLIDE), GPU IR languages; context extension &amp; compaction.
+                Course wrap-up.</td>
+            <td class="none">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- ================================================================
+       REFERENCES
+       ================================================================ -->
+  <section class="section" id="references">
+    <header class="section-head">
+      <h2>References</h2>
+      <p class="section-sub">Foundational theses and living paper lists. Weekly readings are
+        linked from the schedule.</p>
+    </header>
+    <ol class="refs">
+      <li id="ref-desai">Desai, A. (2024). <em>Elastic Parameter Memory for Efficient Machine
+          Learning.</em> Doctoral dissertation, Rice University.</li>
+      <li id="ref-frankle">Frankle, J. (2023). <em>The Lottery Ticket Hypothesis: On Sparse,
+          Trainable Neural Networks.</em> Doctoral dissertation, Massachusetts Institute of
+          Technology.</li>
+      <li id="ref-quang">Quang, T. D. P. (2023). <em>Hardware-Aware Algorithms for Efficient
+          Machine Learning.</em> Doctoral dissertation, Stanford University.</li>
+      <li id="ref-chen">Chen, B. (2020). <em>Locality Sensitive Sampling for Extreme-Scale
+          Optimization and Deep Learning.</em> Doctoral dissertation, Rice University.</li>
+      <li id="ref-mit"><a href="https://hanlab.mit.edu/courses/2024-fall-65940">TinyML and
+          Efficient Deep Learning Computing</a> — MIT 6.5940, a close cousin of this course.</li>
+      <li id="ref-sky"><a href="https://sky-light.eecs.berkeley.edu">Sky-Light, UC Berkeley</a>
+          — see the list of papers.</li>
+      <li id="ref-spec"><a href="https://github.com/hemingkx/SpeculativeDecodingPapers">Speculative
+          decoding paper list</a> — curated on GitHub.</li>
+      <li id="ref-kvpress"><a href="https://github.com/NVIDIA/kvpress">NVIDIA kvpress</a> —
+          KV-cache compression papers and code.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="sparse-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p class="foot-line">Efficient AI</p>
+  <p class="foot-line-2">Department of Computer Science &amp; Engineering · Indian Institute of Technology Bombay</p>
+  <p class="foot-meta"><a href="https://github.com/safffrron/academic-website-template">Site source</a> · Last updated July 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
