@@ -103,12 +103,15 @@ a:hover { text-decoration-color: var(--accent-deep); }
 
 .site-head.scrolled { border-bottom-color: var(--line); }
 
+/* the header runs wider than the reading column */
+.site-head .wrap { max-width: 76rem; }
+
 .head-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-block: 0.6rem;
+  padding-block: 0.7rem;
 }
 
 .brand {
@@ -121,15 +124,15 @@ a:hover { text-decoration-color: var(--accent-deep); }
 }
 
 .brand img {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   align-self: center;
 }
 
 .brand-name {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   line-height: 1;
 }
 
@@ -140,12 +143,12 @@ a:hover { text-decoration-color: var(--accent-deep); }
 
 .site-nav {
   display: flex;
-  gap: 1.15rem;
+  gap: 1.6rem;
   overflow-x: auto;
 }
 
 .site-nav a {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--prose);
   text-decoration: none;
   white-space: nowrap;
@@ -542,7 +545,14 @@ a:hover { text-decoration-color: var(--accent-deep); }
 
 .schedule td.none { color: var(--muted); }
 
-.schedule td:last-child a { white-space: nowrap; }
+/* resources column: real width, bold link labels like the description column */
+.schedule th:last-child,
+.schedule td:last-child { width: 16.5rem; }
+
+.schedule td:last-child a {
+  white-space: nowrap;
+  font-weight: 600;
+}
 
 .schedule .milestone td {
   font-family: var(--font-display);

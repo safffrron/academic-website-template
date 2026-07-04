@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Efficient AI · IIT Bombay</title>
+  <title>Efficient AI (CS 6106) · IIT Bombay</title>
   <meta name="description" content="Efficient AI — a graduate course on algorithmic and hardware-aware approaches to efficient AI training and inference. Department of Computer Science and Engineering, IIT Bombay.">
   <link rel="icon" type="image/svg+xml" href="assets/iitb-seal.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +56,7 @@
   <section class="hero wrap" id="top">
     <div class="hero-text">
       <p class="kicker">
-        <span class="circled">CS 7XX<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M12 20 C13 9 38 4 60 5 C86 6 95 12 93 21 C91 32 62 37 32 35 C14 33 9 28 11 21 C12 16 15 13 20 11"/></svg></span>
+        <span class="circled">CS 6106<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M12 20 C13 9 38 4 60 5 C86 6 95 12 93 21 C91 32 62 37 32 35 C14 33 9 28 11 21 C12 16 15 13 20 11"/></svg></span>
         <span class="kicker-rest">Autumn 2026 · Dept. of Computer Science &amp; Engineering</span>
       </p>
       <h1>Efficient AI</h1>
@@ -125,12 +125,12 @@
       <div class="person">
         <span class="avatar" aria-hidden="true">
           <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/></svg>
-          <b>In</b>
+          <b>Ad</b>
         </span>
         <div class="person-info">
-          <h3>Prof. Instructor Name</h3>
+          <h3>Prof. Aditya Desai</h3>
           <p class="role">Instructor</p>
-          <p class="contact"><a href="mailto:instructor@cse.iitb.ac.in">instructor@cse.iitb.ac.in</a><br>CSE Building, Room 000 · office hours by appointment</p>
+          <p class="contact"><a href="mailto:instructor@cse.iitb.ac.in">instructor@cse.iitb.ac.in</a><br>KReSIT Building, Room KR 208 · office hours by appointment</p>
         </div>
       </div>
       <div class="person">
@@ -267,7 +267,8 @@
           <td>1</td><td>Jul 28</td>
           <td><strong>Why efficient AI</strong> — the cost of training and serving; roofline model,
               memory hierarchy; course logistics.</td>
-          <td><a href="https://hanlab.mit.edu/courses/2024-fall-65940">MIT 6.5940</a></td>
+          <td><a href="https://hanlab.mit.edu/courses/2024-fall-65940">MIT 6.5940</a> — the
+              closest course elsewhere; good introductory slides.</td>
         </tr>
         <tr>
           <td>2</td><td>Aug 04</td>
@@ -279,13 +280,15 @@
           <td>3</td><td>Aug 11</td>
           <td><strong>Pruning &amp; sparsity</strong> — magnitude and structured pruning; the
               lottery ticket hypothesis.</td>
-          <td><a href="#ref-frankle">Frankle ’23</a></td>
+          <td><a href="#ref-frankle">Frankle ’23</a> — the thesis behind the lottery ticket
+              hypothesis.</td>
         </tr>
         <tr>
           <td>4</td><td>Aug 18</td>
           <td><strong>Hardware support for sparsity</strong> — sparse formats, structured sparsity
               on accelerators.</td>
-          <td><a href="https://sky-light.eecs.berkeley.edu">Sky-Light</a></td>
+          <td><a href="https://sky-light.eecs.berkeley.edu">Sky-Light</a> — Berkeley project;
+              see its reading list.</td>
         </tr>
         <tr>
           <td>5</td><td>Aug 25</td>
@@ -303,7 +306,8 @@
           <td>7</td><td>Sep 08</td>
           <td><strong>Elastic parameter memory &amp; hardware-aware hashing</strong> — parameter
               sharing at extreme scale.</td>
-          <td><a href="#ref-desai">Desai ’24</a>, <a href="#ref-chen">Chen ’20</a></td>
+          <td><a href="#ref-desai">Desai ’24</a>, <a href="#ref-chen">Chen ’20</a> — the two
+              theses this lecture draws on.</td>
         </tr>
         <tr class="milestone">
           <td colspan="4">Sep 14 – 20 · mid-semester examinations, no lecture</td>
@@ -318,7 +322,8 @@
           <td>9</td><td>Sep 29</td>
           <td><strong>Low-rank structure</strong> — butterfly and monarch matrices; structured
               matrices as compute savers.</td>
-          <td><a href="#ref-quang">Quang ’23</a></td>
+          <td><a href="#ref-quang">Quang ’23</a> — hardware-aware algorithms, including monarch
+              matrices.</td>
         </tr>
         <tr>
           <td>10</td><td>Oct 06</td>
@@ -335,13 +340,15 @@
           <td>12</td><td>Oct 20</td>
           <td><strong>Speculative decoding</strong> — draft models, verification, acceptance
               schemes.</td>
-          <td><a href="#ref-spec">paper list</a></td>
+          <td><a href="#ref-spec">SpecDec papers</a> — living list of speculative-decoding
+              papers.</td>
         </tr>
         <tr>
           <td>13</td><td>Oct 27</td>
           <td><strong>KV-cache compression &amp; semantic prompt caching</strong> — eviction,
               quantized caches, cache reuse across requests.</td>
-          <td><a href="#ref-kvpress">kvpress</a></td>
+          <td><a href="#ref-kvpress">kvpress</a> — NVIDIA’s library and paper list for
+              KV-cache compression.</td>
         </tr>
         <tr>
           <td>14</td><td>Nov 03</td>
@@ -356,7 +363,7 @@
   <!-- ==============================================================
        REFERENCES
        ============================================================== -->
-  <section class="section wrap wide" id="references">
+  <section class="section wrap" id="references">
     <h2>References<svg class="scrawl" viewBox="0 0 110 8" preserveAspectRatio="none" aria-hidden="true"><path d="M2 4 C45 7 70 2 108 5"/></svg></h2>
     <p class="section-note">Foundational theses and living paper lists. Weekly readings are linked
       from the schedule.</p>
